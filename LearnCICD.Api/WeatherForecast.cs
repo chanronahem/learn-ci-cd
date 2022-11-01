@@ -1,4 +1,4 @@
-namespace DotnetWebApi
+namespace LearnCICD.Api
 {
     public class WeatherForecast
     {

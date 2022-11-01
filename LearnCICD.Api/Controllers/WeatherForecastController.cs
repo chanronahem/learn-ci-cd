@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotnetWebApi.Controllers
+namespace LearnCICD.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]

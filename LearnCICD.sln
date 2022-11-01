@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetWebApi", "DotnetWebApi\DotnetWebApi.csproj", "{92E6857C-885D-4632-821A-95388BE83253}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnCICD.Api", "LearnCICD.Api\LearnCICD.Api.csproj", "{EF015443-60CA-4F99-B1BD-B38046A47B9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{92E6857C-885D-4632-821A-95388BE83253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92E6857C-885D-4632-821A-95388BE83253}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92E6857C-885D-4632-821A-95388BE83253}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92E6857C-885D-4632-821A-95388BE83253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF015443-60CA-4F99-B1BD-B38046A47B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF015443-60CA-4F99-B1BD-B38046A47B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF015443-60CA-4F99-B1BD-B38046A47B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF015443-60CA-4F99-B1BD-B38046A47B9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D9FC1DAD-ACB4-45B4-BE46-13E926C187A0}
+		SolutionGuid = {11569BC1-C66B-40AA-A775-EFBC117399D6}
 	EndGlobalSection
 EndGlobal
