@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+      
+env:
+  DOTNET_VERSION: '6.0.201'
+  HEROKU_WEBAPP_NAME: rona-learn-cicd
+  HEROKU_EMAIL_AUTH: hemchanrona22@gmail.com
 
 jobs:
   build:
@@ -15,7 +20,7 @@ jobs:
       - name: Set up .NET 🛠️
         uses: xt0rted/setup-dotnet@v1.0.0
         with:
-          dotnet-version: 6.0.201
+          dotnet-version: ${{env.DOTNET_VERSION}}
 
       - name: Restore dependencies 🔍
         run: dotnet restore
@@ -25,3 +30,12 @@ jobs:
         
       - name: Run automated tests 🧪
         run: dotnet test -c Release --no-restore
+        
+      - name: Publish app 📢
+        run: dotnet publish -c Release -o ./out
+        
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{env.HEROKU_WEBAPP_NAME}} #Must be unique in Heroku
+          heroku_email: ${{env.HEROKU_EMAIL_AUTH}}
